@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productlist</title>
+    <link rel="stylesheet" href="scss/all.css">
+</head>
+<body>
+<!--header-->
+    <div class="header container d-flex justify-content-between my-2">
+        <h1><a href="index.html">D'PERFUME</a></h1>
+        <ul class="d-none d-sm-flex align-items-center mb-0 h5 font-weight-normal list-unstyled">
+            <li class="mr-5">
+                <a href="productlist.html"><img src="../img/tshirt.svg" alt="">Product</a>
+            </li>
+            <li class="mr-5">
+                <a href="login.html"><img src="../img/user-alt.svg" alt="">Log in</a>
+            </li>
+            <li class="mr-5">
+                <a href="#"><img src="../img/heart.svg" alt="">Wishlist</a>
+            </li>
+            <li>
+                <a href="#"><img src="../img/shopping-cart.svg" alt="">Cart(3)</a>
+            </li>
+        </ul>
+        <div class="d-sm-none d-flex align-items-center">
+            <div class="mr-20">
+                <img class="position-relative" src="../img/shopping-cart.svg" alt="">
+                <p class="cartnum position-absolute rounded-circle bg-primary px-1">3</p>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/bars.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+<!--漢堡選單-->
+    <div class="collapse" id="navbarToggleExternalContent">
+        <ul class="list-unstyled h5 font-weight-light text-center">
+            <li><a href="productlist.html" class="d-block text-white border border-white bg-nar py-14">Product</a></li>
+            <li><a href="login.html" class="d-block text-white border border-white bg-nar py-14">Wishlist</a></li>
+            <li><a href="#" class="d-block text-white border border-white bg-nar py-14">Blog</a></li>
+            <li><a href="#" class="d-block text-white border border-white bg-nar py-14">Contact</a></li>
+            <li><a href="#" class="d-block text-white border border-white bg-nar py-14">Mypage</a></li>
+        </ul>
+    </div>
+<!--brandlist-->
+    <div class="bg-primary brandlist">
+        <div class="container">
+            <ul class="d-none d-sm-flex list-unstyled align-items-center py-14 h5 font-weight-normal mb-0 ">
+                <li class="mr-28"><a href="#">CHANEL</a></li>
+                <li class="mr-28"><a href="#">Jo Malone</a></li>
+                <li class="mr-28"><a href="#">Curology</a></li>
+                <li class="mr-28"><a href="#">Dior</a></li>
+                <li class="mr-28"><a href="#">Chloe</a></li>
+                <li ><a href="#">ZARA</a></li>
+            </ul>
+        </div>
+    </div>
+<!--content-->
+    <div class="container my-sm-80 mb-sm-6">
+        <div class="row">
+    <!--content1-->
+        <div class="col-sm-2 text-mypage2 order-1 mt-5 order-sm-1 mt-sm-0">
+            <h5 class="d-none d-sm-flex mb-sm-28">會員中心</h5>
+            <ui class="d-flex d-sm-block list-unstyled justify-content-between">
+                <li class="mb-4">會員資料修改</li>
+                <li class="mb-4">訂單查詢</li>
+                <li>退／換貨申請</li>
+            </ui>
+        </div>
+    <!--content2_1-->    
+        <div class="col-lg-7 order-3 order-sm-2">
+            <form class="mb-6 text-mypage1">
+                <div class="text-dark">
+                    <p class="mb-0">個人資料修改</p>
+                    <hr class="mt-2">
+                </div>
+                <div class="form-group row no-gutters">
+                    <label class="col-3 col-sm-2 col-form-label">會員帳號</label>
+                    <div class="col-9 col-sm-8">
+                    <p class="mb-0 py-2">email@example.com</p>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                <label for="name" class="col-3 col-sm-2 col-form-label">會員姓名</label>
+                <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="name">
+                </div>
+                </div>
+                <div class="form-group row no-gutters">
+                <label class="col-3 col-sm-2 col-form-label" for="gender">會員性別</label>
+                <div class="col-3 col-sm-2">
+                    <select class="form-control" id="gender">
+                    <option>女</option>
+                    <option>男</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="mail" class="col-3 col-sm-2 col-form-label">電子信箱</label>
+                    <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="mail" placeholder="email@example.com">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="phone" class="col-3 col-sm-2 col-form-label">手機號碼</label>
+                    <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                <label class="col-3 col-sm-2 col-form-label">聯絡地址</label>
+                    <div class="col-9 col-sm-8">
+                        <select class="form-control col-6 col-sm-4 mb-2"  id="address">>
+                            <option>台灣及離島</option>
+                            <option>台灣及離島</option>
+                        </select>
+                        <div class="form-row mb-2">
+                            <div class="col-3 col-sm-4">
+                                <select class="form-control" id="address">
+                                    <option>高雄市</option>
+                                    <option>桃園市</option>
+                                </select>
+                            </div>
+                            <div class="col-3 col-sm-4">
+                                <select class="form-control" id="address">
+                                    <option>鹽埕區</option>
+                                    <option>桃園區</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                            <input type="text" class="form-control" id="address" placeholder="請輸入地址">
+                            <p class="mt-2 mb-20">我願意收到最新優惠情報</p>
+                        
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label class="col-3 col-sm-2 col-form-label">配送地址</label>
+                    <div class="col-9 col-sm-8">
+                        <select class="form-control col-6 col-sm-4 mb-2"  id="address">>
+                            <option>台灣及離島</option>
+                            <option>台灣及離島</option>
+                        </select>
+                        <div class="form-row mb-2">
+                            <div class="col-3 col-sm-4">
+                                <select class="form-control" id="address">
+                                    <option>高雄市</option>
+                                    <option>桃園市</option>
+                                </select>
+                            </div>
+                            <div class="col-3 col-sm-4">
+                                <select class="form-control" id="address">
+                                    <option>鹽埕區</option>
+                                    <option>桃園區</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control mb-3" id="address" placeholder="請輸入地址">
+                        <button type="submit" class="btn btn-primary px-6 py-2">確定修改</button>
+                    </div>
+                </div>  
+            </form>
+            <!--content2_2-->
+            <form class="text-mypage1">
+                <div class="text-dark">
+                    <p class="mb-0">修改密碼</p>
+                    <hr class="mt-2">
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="old" class="col-3 col-sm-2 col-form-label">舊密碼</label>
+                    <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="old">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="new" class="col-3 col-sm-2 col-form-label">新密碼</label>
+                    <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="new">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <label for="checknew" class="col-3 col-sm-2 col-form-label">確認新密碼</label>
+                    <div class="col-9 col-sm-8">
+                    <input type="text" class="form-control" id="checknew">
+                    </div>
+                </div>
+                <div class="form-group row no-gutters mb-40 mb-sm-0">
+                    <div class="col-3 col-sm-2"></div>
+                    <div class="col-9 col-sm-8">
+                        <button type="submit" class="btn btn-primary px-6 py-2">變更密碼</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+<!--content3-->    
+        <div class="col-lg-3 order-2 order-sm-3 mb-40 mb-sm-0">
+            <div class="d-flex align-items-center">
+                <img class="mr-1" src="../img/user-alt2.svg" alt="">
+                <p class="text-mypage1 mb-0 mr-1">會員編碼</p>
+                <h5 class="mb-0 text-mypage2">T00020080615</h5>
+            </div>
+            <table class="table text-mypage1 mb-0">
+                <tbody>
+                  <tr>
+                    <th scope="row">購物車</th><td>56</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">我的收藏</th><td>23</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">已完成訂單</th><td>8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">會員紅利</th><td>2680</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="pb-0">專屬邀請碼</th><td class="pb-0">TK2075</td>
+                  </tr>
+                </tbody>
+            </table>
+            <p class="font-weight-light small">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+        </div>
+        </div>
+    </div>
+<!--footer-->
+    <div class="bg-primary py-20">
+        <div class="container d-flex justify-content-center justify-content-sm-between align-items-center text-white">
+            <div class="d-flex align-items-center">
+                <img class="mr-20" src="../img/footer.png" alt="">
+                <p class="small mb-0">© 2020. All Rights Reserved.</p>
+            </div>
+            <ul class="d-none d-sm-flex list-unstyled h5 mb-0 font-weight-normal">
+                <li class="mr-36"><a href="#" class="text-white">Product</a></li>
+                <li class="mr-36"><a href="#" class="text-white">Blog</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
